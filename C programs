@@ -1,0 +1,180 @@
+//program to calculate a simple interest
+/*
+Author Ivy kemboi
+Date 20/9/2024
+Reg no CT101/G/24882/24
+*/
+# include <stdio.h>
+int main (){
+	float  principal_amount;
+	float  time ;
+	float  rate ; 
+	float  simple_interest ;
+	
+	
+
+
+  printf("Enter the principal_amount in percentage");
+  scanf("%f",& principal_amount);
+  
+  printf("Enter the time in years");
+  scanf("%f", & time);
+  
+  printf("Enter the rate in percentage");
+  scanf("%f" , & rate);
+   
+'simple_intrest=(principal_amount *rate*time)/100' ;
+ 
+ 
+   printf("Calculate the simple_interest in %2f \n " , 'simple interest');
+   
+   return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+//program to calculate fine for over_due library books;
+/*
+Author Ivy kemboi
+Date 30/09/2024
+Reg no CT101/G/24882/24
+*/
+
+#include <stdio.h>
+int main () {
+	int book_ID;
+	int overdue_date;
+	int return_date;
+	double fine_amount;
+	double fine_rate;
+	
+	printf("enter the book_ID:");
+	scanf("%d" ,& book_ID);
+	
+	printf("enter the overdue_date:");
+	scanf("%d" , &overdue_date);
+	
+	
+	printf("enter the  return_date:");
+	scanf("%d" , & return_date);
+	
+	/*
+	we now need to determine the number of due days to get amount to be charged
+	*/
+int overdue_days=return_date - overdue_date;
+
+if (overdue_date<= 7) {fine_rate=20;}
+if (overdue_days<=14){fine_rate=50;} else{fine_rate =100;}
+
+//total amount of fine will be
+fine_amount=overdue_days*fine_rate;
+
+
+printf("book_ID:%d\n", book_ID);
+printf("overdue_date:%d\n", overdue_date);
+printf("return_date:%d\n", return_date);
+printf("days over_due:%d\n",  overdue_date);
+printf("fine_rate per day:%lf\n", fine_rate);
+printf("total fine_amount: ksh.%lf\n",fine_amount);
+	
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//program to calculate a compound_interest
+/*
+Author:Ivy kemboi
+Date:20/9/2024
+Reg no:CT101/G/24882/24
+*/
+#include <stdio.h>
+int main () {
+	
+	float principal_amount;
+	float interest_rate;
+	float time;
+	
+	
+	printf("Enter the principal_amount:");
+	scanf("%f" ,&principal_amount);
+	
+	printf("Enter the interest_rate:");
+	scanf("%f" ,&interest_rate);
+	
+	printf("Enter the time:");
+	scanf("%f" ,&time);
+	
+	int amount=principal_amount(1+interest_rate/100)^2);
+	
+			printf("amount is %d", amount);
+			
+					return 0;		
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+//program to issue a loanin a bank
+/*
+Author:Ivy kemboi
+Date:29/09/2024
+Reg no: CT101/G/24882/24
+*/
+
+#include <stdio.h>
+
+int main (){
+	int age;
+	float annual_income;
+	
+	printf("Enter the customer age:");
+	scanf("%d" ,age);
+	
+	printf("Enter the customer annual_income:");
+	scanf("%f" ,annual_income);
+	
+	
+	if (age>=21 && 'annual_income'>=21000) {
+	
+	printf("congratulations you qualify for a loan. \ n");
+	}
+	
+else{	
+	printf("unfortunately we are unable to offer you a loan at this time.");
+}
+	
+	return 0;
+}
+
+
+
