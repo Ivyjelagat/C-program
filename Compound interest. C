@@ -1,0 +1,32 @@
+//program to calculate a compound_interest
+/*
+Author:Ivy kemboi
+Date:20/9/2024
+Reg no:CT101/G/24882/24
+*/
+#include <stdio.h>
+int main () {
+	
+	float principal_amount;
+	float interest_rate;
+	float time;
+	
+	
+	printf("Enter the principal_amount:");
+	scanf("%f" ,&principal_amount);
+	
+	printf("Enter the interest_rate:");
+	scanf("%f" ,&interest_rate);
+	
+	printf("Enter the time:");
+	scanf("%f" ,&time);
+	
+	int amount=principal_amount(1+interest_rate/100)^2);
+	
+			printf("amount is %d", amount);
+			
+					return 0;		
+
+
+
+}
