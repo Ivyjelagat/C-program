@@ -1,0 +1,65 @@
+// structure variables of c
+/*
+Name Ivy kemboi
+Date 20/10/2024
+Reg_no CT101/G/24882/24
+*/
+
+
+#include <stdio.h>
+#include <string.h>
+
+struct student {
+	char name [30];
+	char email [50];
+	char Reg_no[25] ;
+	float height ;
+	int phone_no ;
+	
+} student1 ,student2;
+
+int main (){
+	// struct student student 1,student 2
+	/*strcpy(student1 .name,"ivy");
+	strcpy(student1 . email,"ivykemboi@gmail.com");
+	
+	strcpy(student1 .Reg_no,"CT101/G/24882/24");
+	student1.height =5.7;
+	student1.phone_no =712345678;*/
+	printf("enter your name:");
+	scanf("%s", & student1.name);
+	printf("The name is %s \n",student1.name);
+	
+	
+	printf("Enter your email number:");
+	scanf("%s", & student1.email);
+	printf("The email is %s \n",student1.email);
+	
+	
+	
+	printf("Enter your Reg_no:");
+	scanf("%s",& student1.Reg_no);
+	printf("The Reg_ no is %s \n",student1.Reg_no);
+	
+	
+	
+	printf("Enter your height:");
+	scanf("%f",& student1.height);
+	printf("The height is %f \n",student1.height);
+	
+	
+	
+	printf("Enter your phone_no:");
+	scanf("%d",& student1.phone_no);
+	printf("The phone_no is %d \n",student1.phone_no);
+	
+	
+	/*printf("name:%s\n",student1. name);
+	printf("email:%s\n",student1.email);
+	printf("Reg_no:%s\n",student1.Reg_no);
+	printf("height:%f\n",student1.height);
+	printf("phone_no:%d\n",student1.phone_no);*/
+	
+	return 0;
+
+}
